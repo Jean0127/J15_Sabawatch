@@ -1,225 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sabawatch | Technomarine 1.1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabawatch | Premium Watches</title>
 
-  <!-- Logo de la pestaña -->
-  <link rel="icon" type="image/png" href="logo.png">
+<link rel="icon" href="logo.png">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 
-    body{
-      background:#000;
-      color:#fff;
-    }
+body{background:#000;color:#fff;}
 
-    header{
-      text-align:center;
-      padding:20px;
-      background:linear-gradient(to right,#000,#111,#000);
-    }
+header{
+text-align:center;
+padding:15px;
+border-bottom:1px solid #222;
+position:sticky;
+top:0;
+background:#000;
+}
 
-    header h1{
-      color:gold;
-      font-size:2.5rem;
-      letter-spacing:2px;
-    }
+header h1{color:gold;letter-spacing:3px;}
 
-    header p{
-      margin-top:5px;
-      font-size:1rem;
-      opacity:0.8;
-    }
+.hero{text-align:center;padding:50px 20px;}
 
-    .marca{
-      font-size:0.9rem;
-      color:#aaa;
-      letter-spacing:3px;
-      margin-top:5px;
-    }
+.gold{color:gold;}
 
-    .hero{
-      text-align:center;
-      padding:40px 20px;
-    }
+.catalogo{
+width:90%;
+max-width:700px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,215,0,0.4);
+margin-top:20px;
+}
 
-    .hero h2{
-      font-size:2.2rem;
-      margin-bottom:10px;
-    }
+.price{
+font-size:2rem;
+color:gold;
+margin:15px 0;
+}
 
-    .gold{
-      color:gold;
-    }
+.old{
+text-decoration:line-through;
+color:#888;
+font-size:1.2rem;
+}
 
-    .stock{
-      color:red;
-      font-size:1.3rem;
-      margin:20px 0;
-      font-weight:bold;
-    }
+.cta{
+display:inline-block;
+padding:15px 30px;
+background:gold;
+color:#000;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-top:15px;
+transition:0.3s;
+}
 
-    .catalogo{
-      width:90%;
-      max-width:900px;
-      border-radius:20px;
-      box-shadow:0 0 25px gold;
-    }
+.cta:hover{
+background:#fff;
+transform:scale(1.1);
+}
 
-    .beneficios{
-      padding:40px 20px;
-      text-align:center;
-    }
+.stock{
+color:red;
+margin:15px 0;
+font-weight:bold;
+}
 
-    .beneficios h2{
-      margin-bottom:20px;
-      color:gold;
-    }
+.section{
+padding:50px 20px;
+text-align:center;
+}
 
-    .beneficios ul{
-      list-style:none;
-      font-size:1.1rem;
-      line-height:2;
-    }
+.beneficios ul{
+list-style:none;
+line-height:2;
+}
 
-    .video-section{
-      text-align:center;
-      padding:40px 20px;
-    }
+.testimonios{
+background:#0a0a0a;
+}
 
-    .video-section h2{
-      color:gold;
-      margin-bottom:20px;
-    }
+.card{
+background:#111;
+padding:20px;
+margin:15px auto;
+max-width:300px;
+border-radius:15px;
+box-shadow:0 0 15px #111;
+}
 
-    video{
-      width:80%;
-      max-width:500px;
-      border-radius:20px;
-      border:3px solid gold;
-    }
+.video{
+width:90%;
+max-width:500px;
+border-radius:20px;
+border:2px solid gold;
+margin-top:20px;
+}
 
-    .contacto{
-      text-align:center;
-      padding:40px 20px;
-    }
-
-    .btn{
-      display:inline-block;
-      margin:10px;
-      padding:15px 25px;
-      border-radius:15px;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .whatsapp{
-      background:#25D366;
-      color:white;
-    }
-
-    .instagram{
-      background:#E1306C;
-      color:white;
-    }
-
-    .btn:hover{
-      transform:scale(1.1);
-    }
-
-    .floating-whatsapp{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
-      width:70px;
-      height:70px;
-      border-radius:50%;
-      text-decoration:none;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-size:2rem;
-      box-shadow:0 0 20px #25D366;
-    }
-
-    footer{
-      text-align:center;
-      padding:20px;
-      background:#111;
-      color:gold;
-    }
-  </style>
+footer{
+text-align:center;
+padding:20px;
+color:#777;
+font-size:0.9rem;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Sabawatch</h1>
-  <p class="marca">LUXURY WATCHES</p>
-  <p>Technomarine 1.1 - Calidad Premium</p>
+<h1>SABAWATCH</h1>
+<p class="gold">PREMIUM COLLECTION</p>
 </header>
 
 <section class="hero">
-  <h2>4 estilos. 1 solo nivel.</h2>
-  <h2 class="gold">Excelencia sin límites</h2>
+<h2>Eleva tu estilo al siguiente nivel</h2>
 
-  <p>
-    Los mejores relojes de Sabaneta. Diseño premium, elegancia y presencia.
-  </p>
+<p>Relojes premium que proyectan poder, elegancia y presencia.</p>
 
-  <p class="stock">⚠ SOLO QUEDAN 4 EN STOCK ⚠</p>
+<img src="relojes.jpg" class="catalogo">
 
-  <img src="relojes.jpg" alt="Catálogo de relojes" class="catalogo">
-</section>
+<div class="price">
+<span class="old">$150.000</span><br>
+$100.000 COP
+</div>
 
-<section class="beneficios">
-  <h2>¿Por qué elegir Sabawatch?</h2>
+<p class="stock">🔥 HOY DESCUENTO DE $50.000 🔥</p>
 
-  <ul>
-    <li>✔ Caja de plástico resistente y ligera</li>
-    <li>✔ Calendario con fecha y hora exacta</li>
-    <li>✔ Resistente al agua 100 metros</li>
-    <li>✔ Diseños premium 1.1</li>
-    <li>✔ Calidad y lujo que se siente</li>
-  </ul>
-</section>
-
-<section class="video-section">
-  <h2>🔥 Mira cómo lucen en video</h2>
-
-  <video controls autoplay muted loop>
-    <source src="promo.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
-</section>
-
-<section class="contacto">
-  <h2>📲 Compra ahora</h2>
-
-  <a class="btn whatsapp" href="https://wa.me/573046836270" target="_blank">
-    WhatsApp Directo
-  </a>
-
-  <a class="btn instagram" href="https://www.instagram.com/j15__sabawatch/" target="_blank">
-    Instagram
-  </a>
-</section>
-
-<a href="https://wa.me/573046836270" class="floating-whatsapp" target="_blank">
-  💬
+<a href="https://wa.me/573046836270" class="cta" target="_blank">
+Comprar con descuento
 </a>
+</section>
+
+<section class="section beneficios">
+<h2 class="gold">¿Por qué elegir Sabawatch?</h2>
+
+<ul>
+<li>✔ Diseño premium exclusivo</li>
+<li>✔ Resistente al agua</li>
+<li>✔ Alta durabilidad</li>
+<li>✔ Edición limitada</li>
+<li>✔ Garantía de calidad</li>
+</ul>
+</section>
+
+<section class="section">
+<h2 class="gold">Míralos en acción</h2>
+
+<video class="video" controls autoplay muted loop>
+<source src="promo.mp4" type="video/mp4">
+</video>
+</section>
+
+<section class="section testimonios">
+<h2 class="gold">Lo que dicen nuestros clientes</h2>
+
+<div class="card">
+<p>"La calidad es brutal, parece un reloj de alta gama."</p>
+<strong>- Carlos</strong>
+</div>
+
+<div class="card">
+<p>"Me llegó rápido y todos me preguntan por él."</p>
+<strong>- Andrés</strong>
+</div>
+
+<div class="card">
+<p>"Vale cada peso, se ve demasiado elegante."</p>
+<strong>- Juan</strong>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Compra segura</h2>
+
+<p>✔ Envíos a todo Colombia</p>
+<p>✔ Pago contra entrega disponible</p>
+<p>✔ Atención personalizada por WhatsApp</p>
+
+<a href="https://wa.me/573046836270" class="cta" target="_blank">
+Pedir el mío ahora
+</a>
+</section>
 
 <footer>
-  <p>Sabawatch | Más que un reloj, un símbolo de estilo.</p>
+<p>Sabawatch © 2026 - Estilo que define</p>
 </footer>
 
 </body>
