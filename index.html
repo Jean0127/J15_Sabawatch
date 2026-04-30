@@ -1,139 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>J15__Sabawatch | Technomarine 1.1</title>
-
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
-
-    body{
-      background:#000;
-      color:#fff;
-    }
-
-    header{
-      text-align:center;
-      padding:30px;
-      background:linear-gradient(to right,#000,#111,#000);
-    }
-
-    header h1{
-      color:gold;
-      font-size:3rem;
-    }
-
-    header p{
-      margin-top:10px;
-      font-size:1.2rem;
-    }
-
-    .hero{
-      text-align:center;
-      padding:40px 20px;
-    }
-
-    .hero h2{
-      font-size:2.5rem;
-      margin-bottom:10px;
-    }
-
-    .gold{
-      color:gold;
-    }
-
-    .stock{
-      color:red;
-      font-size:1.5rem;
-      margin:20px 0;
-      font-weight:bold;
-    }
-
-    .catalogo{
-      width:90%;
-      max-width:900px;
-      border-radius:20px;
-      box-shadow:0 0 25px gold;
-    }
-
-    .beneficios{
-      padding:40px 20px;
-      text-align:center;
-    }
-
-    .beneficios h2{
-      margin-bottom:20px;
-      color:gold;
-    }
-
-    .beneficios ul{
-      list-style:none;
-      font-size:1.2rem;
-      line-height:2;
-    }
-
-    .video-section{
-      text-align:center;
-      padding:40px 20px;
-    }
-
-    .video-section h2{
-      color:gold;
-      margin-bottom:20px;
-    }
-
-    video{
-      width:80%;
-      max-width:500px;
-      border-radius:20px;
-      border:3px solid gold;
-    }
-
-    .contacto{
-      text-align:center;
-      padding:40px 20px;
-    }
-
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body{background:#000;color:#fff;overflow-x:hidden;}
+    header{padding:30px;text-align:center;background:linear-gradient(90deg,#000,#111,#000);}
+    h1{font-size:3rem;color:gold;text-transform:uppercase;}
+    .hero{padding:40px;text-align:center;}
+    .hero h2{font-size:2.5rem;color:#fff;}
+    .hero p{font-size:1.2rem;margin:20px 0;color:#ddd;}
+    .stock{color:red;font-size:1.5rem;font-weight:bold;animation:blink 1s infinite;}
+    @keyframes blink{50%{opacity:0.5;}}
+    .product-img{width:90%;max-width:900px;border-radius:20px;box-shadow:0 0 30px gold;}
+    .video-section{padding:40px;text-align:center;}
+    video{width:80%;border:3px solid gold;border-radius:20px;}
+    .contact{padding:40px;text-align:center;}
     .btn{
       display:inline-block;
-      margin:10px;
+      margin:15px;
       padding:15px 25px;
       border-radius:15px;
       text-decoration:none;
       font-weight:bold;
-      transition:0.3s;
+      transition:.3s;
     }
-
-    .whatsapp{
-      background:#25D366;
-      color:white;
-    }
-
-    .instagram{
-      background:#E1306C;
-      color:white;
-    }
-
-    .btn:hover{
-      transform:scale(1.1);
-    }
-
-    .qr{
-      margin-top:30px;
-    }
-
-    .qr img{
-      width:250px;
-      border-radius:15px;
-      box-shadow:0 0 20px gold;
-    }
-
+    .whatsapp{background:#25D366;color:white;}
+    .instagram{background:#E1306C;color:white;}
+    .btn:hover{transform:scale(1.08);}
+    .qr{margin-top:20px;}
     .floating-whatsapp{
       position:fixed;
       bottom:20px;
@@ -142,82 +39,52 @@
       width:70px;
       height:70px;
       border-radius:50%;
-      text-decoration:none;
       display:flex;
       justify-content:center;
       align-items:center;
       font-size:2rem;
+      text-decoration:none;
+      color:white;
       box-shadow:0 0 20px #25D366;
     }
-
-    footer{
-      text-align:center;
-      padding:20px;
-      background:#111;
-      color:gold;
-    }
+    footer{padding:20px;text-align:center;background:#111;color:gold;}
   </style>
 </head>
 <body>
 
 <header>
   <h1>J15__Sabawatch</h1>
-  <p>Technomarine 1.1 - Calidad Premium</p>
+  <p>Technomarine 1.1 | Calidad Premium</p>
 </header>
 
 <section class="hero">
   <h2>4 estilos. 1 solo nivel.</h2>
-  <h2 class="gold">Excelencia sin límites</h2>
-
-  <p>
-    Los mejores relojes de Sabaneta. Diseño premium, elegancia y presencia.
-  </p>
-
+  <h2 style="color:gold;">Excelencia sin límites</h2>
+  <p>Los Technomarine 1.1 que están marcando nivel en Sabaneta. Calidad premium, diseño exclusivo y presencia fuerte.</p>
   <p class="stock">⚠ SOLO QUEDAN 4 EN STOCK ⚠</p>
-
-  <img src="relojes.jpg" alt="Catálogo de relojes" class="catalogo">
-</section>
-
-<section class="beneficios">
-  <h2>¿Por qué elegir J15__Sabawatch?</h2>
-
-  <ul>
-    <li>✔ Caja de plástico resistente y ligera</li>
-    <li>✔ Calendario con fecha y hora exacta</li>
-    <li>✔ Resistente al agua 100 metros</li>
-    <li>✔ Diseños premium 1.1</li>
-    <li>✔ Calidad y lujo que se siente</li>
-  </ul>
+  <img src="file_00000000bf9871f5a02f527f53df3a7b" alt="Relojes Technomarine" class="product-img">
 </section>
 
 <section class="video-section">
   <h2>🔥 Mira cómo lucen en video</h2>
-
   <video controls autoplay muted loop>
-    <source src="video.mp4" type="video/mp4">
+    <source src="1000482272.mp4" type="video/mp4">
+    Tu navegador no soporta video.
   </video>
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 </section>
 
-<section class="contacto">
-  <h2>📲 Compra ahora</h2>
+<section class="contact">
+  <h2>📲 Pide el tuyo ahora</h2>
+  <a class="btn whatsapp" href="https://wa.me/573046836270" target="_blank">WhatsApp Directo</a>
+  <a class="btn instagram" href="https://www.instagram.com/j15__sabawatch/" target="_blank">Instagram</a>
 
-  <a class="btn whatsapp" href="https://wa.me/573046836270" target="_blank">
-    WhatsApp Directo
-  </a>
-
-  <a class="btn instagram" href="https://www.instagram.com/j15__sabawatch/" target="_blank">
-    Instagram
-  </a>
-
-  <div class="qr">
-    <h2>Escanea el QR</h2>
-    <img src="qr.png" alt="QR WhatsApp">
-  </div>
+  
 </section>
 
-<a href="https://wa.me/573046836270" class="floating-whatsapp" target="_blank">
-  💬
-</a>
+<a href="https://wa.me/573046836270" class="floating-whatsapp" target="_blank">💬</a>
 
 <footer>
   <p>J15__Sabawatch | Más que un reloj, un símbolo de estilo.</p>
@@ -225,3 +92,5 @@
 
 </body>
 </html>
+
+ 
