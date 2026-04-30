@@ -12,8 +12,12 @@
 
 body{background:#000;color:#fff;}
 
+/* HEADER CON LOGO */
 header{
-text-align:center;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
 padding:15px;
 border-bottom:1px solid #222;
 position:sticky;
@@ -21,7 +25,17 @@ top:0;
 background:#000;
 }
 
-header h1{color:gold;letter-spacing:3px;}
+.logo{
+width:40px;
+height:40px;
+object-fit:contain;
+}
+
+header h1{
+color:gold;
+letter-spacing:3px;
+font-size:1.5rem;
+}
 
 .hero{text-align:center;padding:50px 20px;}
 
@@ -113,8 +127,8 @@ font-size:0.9rem;
 <body>
 
 <header>
-<h1>SABAWATCH</h1>
-<p class="gold">PREMIUM COLLECTION</p>
+  <img src="logoo.png" class="logo" alt="Logo Sabawatch">
+  <h1>SABAWATCH</h1>
 </header>
 
 <section class="hero">
@@ -161,17 +175,17 @@ Comprar con descuento
 
 <div class="card">
 <p>"La calidad es brutal, parece un reloj de alta gama."</p>
-<strong>- Carlos</strong>
+<strong>- Carlos Andrés</strong>
 </div>
 
 <div class="card">
 <p>"Me llegó rápido y todos me preguntan por él."</p>
-<strong>- Andrés</strong>
+<strong>- Mario montoya</strong>
 </div>
 
 <div class="card">
 <p>"Vale cada peso, se ve demasiado elegante."</p>
-<strong>- Juan</strong>
+<strong>- Juan David</strong>
 </div>
 
 </section>
