@@ -3,123 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sabawatch | Premium Watches</title>
 
-<link rel="icon" href="logo.png">
+<!-- FAVICON (icono de la pestaña) -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
 
-body{background:#000;color:#fff;}
+body{
+  background:#000;
+  color:#fff;
+}
 
-/* HEADER CON LOGO */
+/* HEADER */
 header{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-padding:15px;
-border-bottom:1px solid #222;
-position:sticky;
-top:0;
-background:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:15px;
+  border-bottom:1px solid #222;
+  position:sticky;
+  top:0;
+  background:#000;
+  z-index:1000;
 }
 
 .logo{
-width:40px;
-height:40px;
-object-fit:contain;
+  width:40px;
+  height:40px;
+  object-fit:contain;
 }
 
 header h1{
-color:gold;
-letter-spacing:3px;
-font-size:1.5rem;
+  color:gold;
+  letter-spacing:3px;
+  font-size:1.5rem;
 }
 
-.hero{text-align:center;padding:50px 20px;}
+/* HERO */
+.hero{
+  text-align:center;
+  padding:50px 20px;
+}
 
-.gold{color:gold;}
+.gold{
+  color:gold;
+}
 
 .catalogo{
-width:90%;
-max-width:700px;
-border-radius:20px;
-box-shadow:0 0 25px rgba(255,215,0,0.4);
-margin-top:20px;
+  width:90%;
+  max-width:700px;
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(255,215,0,0.4);
+  margin-top:20px;
 }
 
 .price{
-font-size:2rem;
-color:gold;
-margin:15px 0;
+  font-size:2rem;
+  color:gold;
+  margin:15px 0;
 }
 
 .old{
-text-decoration:line-through;
-color:#888;
-font-size:1.2rem;
+  text-decoration:line-through;
+  color:#888;
+  font-size:1.2rem;
 }
 
 .cta{
-display:inline-block;
-padding:15px 30px;
-background:gold;
-color:#000;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-margin-top:15px;
-transition:0.3s;
+  display:inline-block;
+  padding:15px 30px;
+  background:gold;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+  transition:0.3s;
 }
 
 .cta:hover{
-background:#fff;
-transform:scale(1.1);
+  background:#fff;
+  transform:scale(1.1);
 }
 
 .stock{
-color:red;
-margin:15px 0;
-font-weight:bold;
+  color:red;
+  margin:15px 0;
+  font-weight:bold;
 }
 
+/* SECCIONES */
 .section{
-padding:50px 20px;
-text-align:center;
+  padding:50px 20px;
+  text-align:center;
 }
 
 .beneficios ul{
-list-style:none;
-line-height:2;
+  list-style:none;
+  line-height:2;
 }
 
+/* TESTIMONIOS */
 .testimonios{
-background:#0a0a0a;
+  background:#0a0a0a;
 }
 
 .card{
-background:#111;
-padding:20px;
-margin:15px auto;
-max-width:300px;
-border-radius:15px;
-box-shadow:0 0 15px #111;
+  background:#111;
+  padding:20px;
+  margin:15px auto;
+  max-width:300px;
+  border-radius:15px;
+  box-shadow:0 0 15px #111;
 }
 
+/* VIDEO */
 .video{
-width:90%;
-max-width:500px;
-border-radius:20px;
-border:2px solid gold;
-margin-top:20px;
+  width:90%;
+  max-width:500px;
+  border-radius:20px;
+  border:2px solid gold;
+  margin-top:20px;
 }
 
+/* BOTÓN FLOTANTE WHATSAPP */
+.floating-whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  box-shadow:0 0 20px #25D366;
+}
+
+/* FOOTER */
 footer{
-text-align:center;
-padding:20px;
-color:#777;
-font-size:0.9rem;
+  text-align:center;
+  padding:20px;
+  color:#777;
+  font-size:0.9rem;
 }
 </style>
 </head>
@@ -132,78 +170,82 @@ font-size:0.9rem;
 </header>
 
 <section class="hero">
-<h2>Eleva tu estilo al siguiente nivel</h2>
+  <h2>Eleva tu estilo al siguiente nivel</h2>
 
-<p>Relojes premium que proyectan poder, elegancia y presencia.</p>
+  <p>Relojes premium que proyectan poder, elegancia y presencia.</p>
 
-<img src="relojes.png" class="catalogo">
+  <img src="relojes.png" class="catalogo" alt="Catálogo de relojes">
 
-<div class="price">
-<span class="old">$150.000</span><br>
-$100.000 COP
-</div>
+  <div class="price">
+    <span class="old">$150.000</span><br>
+    $100.000 COP
+  </div>
 
-<p class="stock">🔥 HOY DESCUENTO DE $50.000 🔥</p>
+  <p class="stock">🔥 HOY DESCUENTO DE $50.000 🔥</p>
 
-<a href="https://wa.me/573046836270" class="cta" target="_blank">
-Comprar con descuento
-</a>
+  <a href="https://wa.me/573046836270" class="cta" target="_blank">
+    Comprar con descuento
+  </a>
 </section>
 
 <section class="section beneficios">
-<h2 class="gold">¿Por qué elegir Sabawatch?</h2>
+  <h2 class="gold">¿Por qué elegir Sabawatch?</h2>
 
-<ul>
-<li>✔ Diseño premium exclusivo</li>
-<li>✔ Resistente al agua</li>
-<li>✔ Alta durabilidad</li>
-<li>✔ Edición limitada</li>
-<li>✔ Garantía de calidad</li>
-</ul>
+  <ul>
+    <li>✔ Diseño premium exclusivo</li>
+    <li>✔ Resistente al agua</li>
+    <li>✔ Alta durabilidad</li>
+    <li>✔ Edición limitada</li>
+    <li>✔ Garantía de calidad</li>
+  </ul>
 </section>
 
 <section class="section">
-<h2 class="gold">Míralos en acción</h2>
+  <h2 class="gold">Míralos en acción</h2>
 
-<video class="video" controls autoplay muted loop>
-<source src="promo.mp4" type="video/mp4">
-</video>
+  <video class="video" controls autoplay muted loop>
+    <source src="promo.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
 </section>
 
 <section class="section testimonios">
-<h2 class="gold">Lo que dicen nuestros clientes</h2>
+  <h2 class="gold">Lo que dicen nuestros clientes</h2>
 
-<div class="card">
-<p>"La calidad es brutal, parece un reloj de alta gama."</p>
-<strong>- Carlos Andrés</strong>
-</div>
+  <div class="card">
+    <p>"La calidad es brutal, parece un reloj de alta gama."</p>
+    <strong>- Carlos Andrés</strong>
+  </div>
 
-<div class="card">
-<p>"Me llegó rápido y todos me preguntan por él."</p>
-<strong>- Mario montoya</strong>
-</div>
+  <div class="card">
+    <p>"Me llegó rápido y todos me preguntan por él."</p>
+    <strong>- Mario Montoya</strong>
+  </div>
 
-<div class="card">
-<p>"Vale cada peso, se ve demasiado elegante."</p>
-<strong>- Juan David</strong>
-</div>
-
+  <div class="card">
+    <p>"Vale cada peso, se ve demasiado elegante."</p>
+    <strong>- Juan David</strong>
+  </div>
 </section>
 
 <section class="section">
-<h2>Compra segura</h2>
+  <h2>Compra segura</h2>
 
-<p>✔ Envíos a todo Colombia</p>
-<p>✔ Pago contra entrega disponible</p>
-<p>✔ Atención personalizada por WhatsApp</p>
+  <p>✔ Envíos a todo Colombia</p>
+  <p>✔ Pago contra entrega disponible</p>
+  <p>✔ Atención personalizada por WhatsApp</p>
 
-<a href="https://wa.me/573046836270" class="cta" target="_blank">
-Pedir el mío ahora
-</a>
+  <a href="https://wa.me/573046836270" class="cta" target="_blank">
+    Pedir el mío ahora
+  </a>
 </section>
 
+<a href="https://wa.me/573046836270" class="floating-whatsapp" target="_blank">
+  💬
+</a>
+
 <footer>
-<p>Sabawatch © 2026 - Estilo que define</p>
+  <p>Sabawatch © 2026 - Estilo que define</p>
 </footer>
 
 </body>
